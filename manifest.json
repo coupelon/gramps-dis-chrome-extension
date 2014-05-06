@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+
+  "name": "Gramps Extension for DownloadInternetSources",
+  "description": "This Chrome extension is designed to extract with ease the internet links for Gramps",
+  "version": "1.0",
+
+  "permissions": [
+    "webRequest",
+    "clipboardWrite",
+    "*://etat-civil.bas-rhin.fr/adeloch/cg67_img_load.php*",
+    "*://www.archivesdepartementales.puydedome.fr/archives/permalink*"
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "gramps-dis.html"
+  },
+
+  "commands": {
+    "copy-last-link-to-clipboard" : {
+      "suggested_key" : {
+        "default": "Ctrl+Shift+1",
+        "mac": "Command+Shift+C"
+      },
+      "description": "Copie le dernier lien dans le presse papier",
+      "global": true
+    }
+  }
+}

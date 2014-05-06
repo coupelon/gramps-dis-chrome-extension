@@ -9,7 +9,10 @@ var callback = function(details) {
   }
 };
 var filter = {urls: ["*://etat-civil.bas-rhin.fr/adeloch/cg67_img_load.php*",
-  "*://www.archivesdepartementales.puydedome.fr/archives/permalink*"]};
+    "*://archivesenligne.tarn.fr/affichage.php*",
+    "*://www.archives-aube.fr/arkotheque/arkotheque_img_print.php*",
+    "*://www.archinoe.fr/*",
+    "*://www.archives43.fr/arkotheque/visionneuse/print_view.php*"]};
 
 chrome.webRequest.onBeforeRequest.addListener(
         callback, filter);

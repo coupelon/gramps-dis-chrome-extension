@@ -9,7 +9,10 @@
     "webRequest",
     "clipboardWrite",
     "*://etat-civil.bas-rhin.fr/adeloch/cg67_img_load.php*",
-    "*://www.archivesdepartementales.puydedome.fr/archives/permalink*"
+    "*://archivesenligne.tarn.fr/affichage.php*",
+    "*://www.archives-aube.fr/arkotheque/arkotheque_img_print.php*",
+    "*://www.archinoe.fr/*",
+    "*://www.archives43.fr/arkotheque/visionneuse/print_view.php*"
   ],
 
   "background": {
@@ -25,8 +28,8 @@
   "commands": {
     "copy-last-link-to-clipboard" : {
       "suggested_key" : {
-        "default": "Ctrl+Shift+1",
-        "mac": "Command+Shift+C"
+        "default": "Ctrl+Shift+U",
+        "mac": "Command+Shift+U"
       },
       "description": "Copie le dernier lien dans le presse papier",
       "global": true
